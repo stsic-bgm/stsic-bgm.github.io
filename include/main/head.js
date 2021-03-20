@@ -25,6 +25,3 @@ document.write('<meta property="og:image" content="https://stsic-bgm.github.io/i
 document.write('<meta name="twitter:card" content="summary_large_image" />');
 document.write('<meta property="og:site_name" content="stsic" />');
 document.write('<meta property="og:locale" content="ja_JP" />');
-
-//Googleサーチコンソール所有者確認
-document.write('<meta name="google-site-verification" content="GBg61QiTSuk78AvztSA1eNcVlV_roXSDmIOgpqjruT4" />');
