@@ -6,7 +6,6 @@ document.write('<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.
 document.write('<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>');
 document.write('<script src="https://cdn.jsdelivr.net/clipboard.js/1.5.13/clipboard.min.js"></script>');
 
-
 //言語・環境設定
 document.write('<meta charset="utf-8">');
 document.write('<meta http-equiv="X-UA-Compatible" content="IE=edge">');
@@ -26,3 +25,6 @@ document.write('<meta property="og:image" content="https://stsic-bgm.github.io/i
 document.write('<meta name="twitter:card" content="summary_large_image" />');
 document.write('<meta property="og:site_name" content="stsic" />');
 document.write('<meta property="og:locale" content="ja_JP" />');
+
+//Googleサーチコンソール所有者確認
+document.write('<meta name="google-site-verification" content="GBg61QiTSuk78AvztSA1eNcVlV_roXSDmIOgpqjruT4" />');
