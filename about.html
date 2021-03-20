@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <!-- ページの内容 -->
+  <title>stsicについて | stsic</title>
+  <meta name="description" content="勉強や作業に使えるBGMサイト。">
+
+  <!-- OGP -->
+  <meta property="og:url" content="https://stsic-bgm.github.io/about.html" />
+  <meta property="og:title" content="stsicについて | stsic" />
+
+  <!-- head用JS読み込み -->
+  <script type="text/JavaScript" src="./include/main/head.js"></script>
+</head>
+
+<body>
+  <header>
+    <!-- header用JS読み込み -->
+    <script type="text/JavaScript" src="./include/main/header.js"></script>
+  </header>
+  <div id="breadcrumbs">
+    <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+      <!-- 1つめ -->
+      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a itemprop="item" href="index.html">
+          <span itemprop="name">ホーム</span>
+        </a>
+        <meta itemprop="position" content="1" />
+      </li>
+
+      <!-- 2つめ -->
+      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a itemprop="item" href="#">
+          <span itemprop="name">stsicについて</span>
+        </a>
+        <meta itemprop="position" content="2" />
+      </li>
+    </ol>
+  </div>
+  <div id="row">
+    <aside>
+      <!-- sidebar用JS読み込み -->
+      <script type="text/JavaScript" src="./include/main/sidebar.js"></script>
+    </aside>
+    <main id="about-page">
+      <section id="about-top">
+        <img src="images/stsic-logo-noback.png">
+        <p>BGMを再生して勉強に集中。</p>
+        <div class="about-start-btn"><a href="index.html">Start playing BGM</a></div>
+      </section>
+      <section id="amount-section">
+        <h2>沢山の量のBGM</h2>
+        <div class="about-row">
+          <img src="images/category.png" id="category-img">
+          <div id="about-amount">
+            <div class="count">
+              <p class="count-1" data-num="15">0</p>
+              <p>種のカテゴリー</p>
+            </div>
+            <div class="count">
+              <p class="count-2" data-num="150">0</p>
+              <p>個のBGM</p>
+            </div>
+            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+            <script type="text/JavaScript" src="./javascript/count.js"></script>
+          </div>
+        </div>
+      </section>
+      <section id="concentration-hinder">
+        <h2>集中を妨げない</h2>
+        <h3>BGMを選ぶ時間を減らす</h3>
+        <div id="choice-time">
+          <p><span id="choice-time-big">「今日のBGM」「ランダム表示」</span><br>機能を搭載</p>
+          <p>勝手にBGMを選ぶことで自分が選ぶ時間を短縮。その時間を勉強に。</p>
+        </div>
+        <section id="today-bgm" class="h">
+          <h2 id="today-bgm-h2">今日のBGM</h2>
+          <div id="today-sound">
+          </div>
+          <!-- 今日のBGM用JS読み込み -->
+          <script type="text/JavaScript" src="./javascript/today-bgm.js"></script>
+          <!-- コピー用JS読み込み -->
+          <script type="text/JavaScript" src="./javascript/copy.js"></script>
+        </section>
+      </section>
+      <section id="about-last">
+        <h2>早速BGMを流して勉強をしてみましょう。</h2>
+        <div class="about-start-btn"><a href="index.html">BGMを流す</a></div>
+      </section>
+    </main>
+  </div>
+  <footer>
+    <!-- footer用JS読み込み -->
+    <script type="text/JavaScript" src="./include/main/footer.js"></script>
+  </footer>
+</body>
+
+</html>

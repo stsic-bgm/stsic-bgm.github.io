@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <!-- ページの内容 -->
+  <title>stsic</title>
+  <meta name="description" content="勉強や作業に使えるBGMサイト。">
+
+  <!-- OGP -->
+  <meta property="og:url" content="https://stsic-bgm.github.io/" />
+  <meta property="og:title" content="stsic" />
+
+  <!-- head用JS読み込み -->
+  <script type="text/JavaScript" src="./include/main/head.js"></script>
+</head>
+
+<body>
+  <header>
+    <!-- header用JS読み込み -->
+    <script type="text/JavaScript" src="./include/main/header.js"></script>
+  </header>
+  <div id="breadcrumbs">
+    <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+      <!-- 1つめ -->
+      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a itemprop="item" href="index.html">
+          <span itemprop="name">ホーム</span>
+        </a>
+        <meta itemprop="position" content="1" />
+      </li>
+    </ol>
+  </div>
+  <div id="row">
+    <aside>
+      <!-- sidebar用JS読み込み -->
+      <script type="text/JavaScript" src="./include/main/sidebar.js"></script>
+    </aside>
+    <main class="h">
+      <section id="first">
+        <h2>ようこそ！stsicへ</h2>
+        <img src="images/audio-book.jpg">
+        <p>
+          ようこそ、勉強用BGMサイトのstsic（ストサイック）へ！<br>このサイトは勉強中に聞くBGMをまとめたサイトです。勉強以外のことにも使えます。これで勉強がはかどってくれるとありがたいです。ではBGMを選んで勉強、作業を始めましょう！
+        </p>
+      </section>
+      <section id="today-bgm">
+        <h2>今日のBGM</h2>
+        <div id="today-sound">
+        </div>
+        <!-- 今日のBGM用JS読み込み -->
+        <script type="text/JavaScript" src="./javascript/today-bgm.js"></script>
+        <!-- コピー用JS読み込み -->
+        <script type="text/JavaScript" src="./javascript/copy.js"></script>
+      </section>
+      <section>
+        <h2>ジャンルから選ぶ</h2>
+        <div id="toppage-type">
+          <a href="./category/jazz/index.html">
+            <div class="toppage-type-content">
+              <img src="./images/genre/01-jazz.jpg">
+              <p>ジャズ(カフェ)</p>
+            </div>
+          </a>
+          <a href="./category/j-pop/index.html">
+            <div class="toppage-type-content">
+              <img src="./images/genre/02-j-pop.jpg">
+              <p>j-pop</p>
+            </div>
+          </a>
+          <a href="./category/western-music/index.html">
+            <div class="toppage-type-content">
+              <img src="./images/genre/03-western-music.jpg">
+              <p>洋楽</p>
+            </div>
+          </a>
+          <a href="./category/edm/index.html">
+            <div class="toppage-type-content">
+              <img src="./images/genre/04-edm.jpg">
+              <p>EDM</p>
+            </div>
+          </a>
+          <a href="./category/japanese-style/index.html">
+            <div class="toppage-type-content">
+              <img src="./images/genre/05-japanese-style.jpg">
+              <p>和風</p>
+            </div>
+          </a>
+          <a href="./category/ghibli/index.html">
+            <div class="toppage-type-content">
+              <img src="./images/genre/06-ghibli.jpg">
+              <p>ジブリ</p>
+            </div>
+          </a>
+          <a href="./category/disney/index.html">
+            <div class="toppage-type-content">
+              <img src="./images/genre/07-disney.jpg">
+              <p>ディズニー</p>
+            </div>
+          </a>
+          <a href="./category/music-box/index.html">
+            <div class="toppage-type-content">
+              <img src="./images/genre/08-music-box.jpg">
+              <p>オルゴール</p>
+            </div>
+          </a>
+          <a href="./category/piano/index.html">
+            <div class="toppage-type-content">
+              <img src="./images/genre/09-piano.jpg">
+              <p>ピアノ</p>
+            </div>
+          </a>
+          <a href="./category/natural-sound/index.html">
+            <div class="toppage-type-content">
+              <img src="./images/genre/10-natural.jpg">
+              <p>自然音</p>
+            </div>
+          </a>
+          <a href="./category/study-sound/index.html">
+            <div class="toppage-type-content">
+              <img src="./images/genre/11-study-sound.jpg">
+              <p>勉強中の音</p>
+            </div>
+          </a>
+          <a href="./category/animal-crossing/index.html">
+            <div class="toppage-type-content">
+              <img src="./images/genre/12-animal-crossing.jpg">
+              <p>あつ森</p>
+            </div>
+          </a>
+          <a href="./category/alpha-wave/index.html">
+            <div class="toppage-type-content">
+              <img src="./images/genre/13-alpha-wave.jpg">
+              <p>α波</p>
+            </div>
+          </a>
+          <a href="./category/classic/index.html">
+            <div class="toppage-type-content">
+              <img src="./images/genre/14-classic.jpg">
+              <p>クラシック</p>
+            </div>
+          </a>
+          <a href="./category/celtic-music/index.html">
+            <div class="toppage-type-content">
+              <img src="./images/genre/15-celtic-music.jpg">
+              <p>ケルト音楽</p>
+            </div>
+          </a>
+        </div>
+      </section>
+    </main>
+  </div>
+  <footer>
+    <!-- footer用JS読み込み -->
+    <script type="text/JavaScript" src="./include/main/footer.js"></script>
+  </footer>
+</body>
+
+</html>

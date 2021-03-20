@@ -1,0 +1,159 @@
+<script>
+  // リダイレクト用プログラム
+  // 複数のURLからランダムに選択してリダイレクトする
+  f_redirect();
+
+  function f_redirect() {
+    // 下のクォーテーション内('')にリダイレクトしたいURLを記述
+    // 最後の行末にカンマ(,)は不要
+    var arr = [
+      // ジャズ
+      'https://stsic-bgm.github.io/category/jazz/001.html',
+      'https://stsic-bgm.github.io/category/jazz/002.html',
+      'https://stsic-bgm.github.io/category/jazz/003.html',
+      'https://stsic-bgm.github.io/category/jazz/004.html',
+      'https://stsic-bgm.github.io/category/jazz/005.html',
+      'https://stsic-bgm.github.io/category/jazz/006.html',
+      'https://stsic-bgm.github.io/category/jazz/007.html',
+      'https://stsic-bgm.github.io/category/jazz/008.html',
+      'https://stsic-bgm.github.io/category/jazz/009.html',
+      'https://stsic-bgm.github.io/category/jazz/010.html',
+      // j-pop
+      'https://stsic-bgm.github.io/category/j-pop/002.html',
+      'https://stsic-bgm.github.io/category/j-pop/003.html',
+      'https://stsic-bgm.github.io/category/j-pop/004.html',
+      'https://stsic-bgm.github.io/category/j-pop/005.html',
+      'https://stsic-bgm.github.io/category/j-pop/006.html',
+      'https://stsic-bgm.github.io/category/j-pop/007.html',
+      'https://stsic-bgm.github.io/category/j-pop/008.html',
+      'https://stsic-bgm.github.io/category/j-pop/009.html',
+      'https://stsic-bgm.github.io/category/j-pop/010.html',
+      // 和風
+      'https://stsic-bgm.github.io/category/western-music/002.html',
+      'https://stsic-bgm.github.io/category/western-music/003.html',
+      'https://stsic-bgm.github.io/category/western-music/004.html',
+      'https://stsic-bgm.github.io/category/western-music/005.html',
+      'https://stsic-bgm.github.io/category/western-music/006.html',
+      'https://stsic-bgm.github.io/category/western-music/007.html',
+      'https://stsic-bgm.github.io/category/western-music/008.html',
+      'https://stsic-bgm.github.io/category/western-music/009.html',
+      'https://stsic-bgm.github.io/category/western-music/010.html',
+      // EDM
+      'https://stsic-bgm.github.io/category/edm/002.html',
+      'https://stsic-bgm.github.io/category/edm/003.html',
+      'https://stsic-bgm.github.io/category/edm/004.html',
+      'https://stsic-bgm.github.io/category/edm/005.html',
+      'https://stsic-bgm.github.io/category/edm/006.html',
+      'https://stsic-bgm.github.io/category/edm/007.html',
+      'https://stsic-bgm.github.io/category/edm/008.html',
+      'https://stsic-bgm.github.io/category/edm/009.html',
+      'https://stsic-bgm.github.io/category/edm/010.html',
+      // 和風
+      'https://stsic-bgm.github.io/category/japanese-style/002.html',
+      'https://stsic-bgm.github.io/category/japanese-style/003.html',
+      'https://stsic-bgm.github.io/category/japanese-style/004.html',
+      'https://stsic-bgm.github.io/category/japanese-style/005.html',
+      'https://stsic-bgm.github.io/category/japanese-style/006.html',
+      'https://stsic-bgm.github.io/category/japanese-style/007.html',
+      'https://stsic-bgm.github.io/category/japanese-style/008.html',
+      'https://stsic-bgm.github.io/category/japanese-style/009.html',
+      'https://stsic-bgm.github.io/category/japanese-style/010.html',
+      // ジブリ
+      'https://stsic-bgm.github.io/category/ghibli/002.html',
+      'https://stsic-bgm.github.io/category/ghibli/003.html',
+      'https://stsic-bgm.github.io/category/ghibli/004.html',
+      'https://stsic-bgm.github.io/category/ghibli/005.html',
+      'https://stsic-bgm.github.io/category/ghibli/006.html',
+      'https://stsic-bgm.github.io/category/ghibli/007.html',
+      'https://stsic-bgm.github.io/category/ghibli/008.html',
+      'https://stsic-bgm.github.io/category/ghibli/009.html',
+      'https://stsic-bgm.github.io/category/ghibli/010.html',
+      // ディズニー
+      'https://stsic-bgm.github.io/category/disney/002.html',
+      'https://stsic-bgm.github.io/category/disney/003.html',
+      'https://stsic-bgm.github.io/category/disney/004.html',
+      'https://stsic-bgm.github.io/category/disney/005.html',
+      'https://stsic-bgm.github.io/category/disney/006.html',
+      'https://stsic-bgm.github.io/category/disney/007.html',
+      'https://stsic-bgm.github.io/category/disney/008.html',
+      'https://stsic-bgm.github.io/category/disney/009.html',
+      'https://stsic-bgm.github.io/category/disney/010.html',
+      // オルゴール
+      'https://stsic-bgm.github.io/category/music-box/002.html',
+      'https://stsic-bgm.github.io/category/music-box/003.html',
+      'https://stsic-bgm.github.io/category/music-box/004.html',
+      'https://stsic-bgm.github.io/category/music-box/005.html',
+      'https://stsic-bgm.github.io/category/music-box/006.html',
+      'https://stsic-bgm.github.io/category/music-box/007.html',
+      'https://stsic-bgm.github.io/category/music-box/008.html',
+      'https://stsic-bgm.github.io/category/music-box/009.html',
+      'https://stsic-bgm.github.io/category/music-box/010.html',
+      // ピアノ
+      'https://stsic-bgm.github.io/category/piano/002.html',
+      'https://stsic-bgm.github.io/category/piano/003.html',
+      'https://stsic-bgm.github.io/category/piano/004.html',
+      'https://stsic-bgm.github.io/category/piano/005.html',
+      'https://stsic-bgm.github.io/category/piano/006.html',
+      'https://stsic-bgm.github.io/category/piano/007.html',
+      'https://stsic-bgm.github.io/category/piano/008.html',
+      'https://stsic-bgm.github.io/category/piano/009.html',
+      'https://stsic-bgm.github.io/category/piano/010.html',
+      // 自然音
+      'https://stsic-bgm.github.io/category/natural-sound/002.html',
+      'https://stsic-bgm.github.io/category/natural-sound/003.html',
+      'https://stsic-bgm.github.io/category/natural-sound/004.html',
+      'https://stsic-bgm.github.io/category/natural-sound/005.html',
+      'https://stsic-bgm.github.io/category/natural-sound/006.html',
+      'https://stsic-bgm.github.io/category/natural-sound/007.html',
+      'https://stsic-bgm.github.io/category/natural-sound/008.html',
+      'https://stsic-bgm.github.io/category/natural-sound/009.html',
+      'https://stsic-bgm.github.io/category/natural-sound/010.html',
+      // あつ森
+      'https://stsic-bgm.github.io/category/animal-crossing/002.html',
+      'https://stsic-bgm.github.io/category/animal-crossing/003.html',
+      'https://stsic-bgm.github.io/category/animal-crossing/004.html',
+      'https://stsic-bgm.github.io/category/animal-crossing/005.html',
+      'https://stsic-bgm.github.io/category/animal-crossing/006.html',
+      'https://stsic-bgm.github.io/category/animal-crossing/007.html',
+      'https://stsic-bgm.github.io/category/animal-crossing/008.html',
+      'https://stsic-bgm.github.io/category/animal-crossing/009.html',
+      'https://stsic-bgm.github.io/category/animal-crossing/010.html',
+      // α波
+      'https://stsic-bgm.github.io/category/alpha-wave/002.html',
+      'https://stsic-bgm.github.io/category/alpha-wave/003.html',
+      'https://stsic-bgm.github.io/category/alpha-wave/004.html',
+      'https://stsic-bgm.github.io/category/alpha-wave/005.html',
+      'https://stsic-bgm.github.io/category/alpha-wave/006.html',
+      'https://stsic-bgm.github.io/category/alpha-wave/007.html',
+      'https://stsic-bgm.github.io/category/alpha-wave/008.html',
+      'https://stsic-bgm.github.io/category/alpha-wave/009.html',
+      'https://stsic-bgm.github.io/category/alpha-wave/010.html',
+      // クラシック
+      'https://stsic-bgm.github.io/category/classic/002.html',
+      'https://stsic-bgm.github.io/category/classic/003.html',
+      'https://stsic-bgm.github.io/category/classic/004.html',
+      'https://stsic-bgm.github.io/category/classic/005.html',
+      'https://stsic-bgm.github.io/category/classic/006.html',
+      'https://stsic-bgm.github.io/category/classic/007.html',
+      'https://stsic-bgm.github.io/category/classic/008.html',
+      'https://stsic-bgm.github.io/category/classic/009.html',
+      'https://stsic-bgm.github.io/category/classic/010.html',
+      // ケルト音楽
+      'https://stsic-bgm.github.io/category/celtic-music/002.html',
+      'https://stsic-bgm.github.io/category/celtic-music/003.html',
+      'https://stsic-bgm.github.io/category/celtic-music/004.html',
+      'https://stsic-bgm.github.io/category/celtic-music/005.html',
+      'https://stsic-bgm.github.io/category/celtic-music/006.html',
+      'https://stsic-bgm.github.io/category/celtic-music/007.html',
+      'https://stsic-bgm.github.io/category/celtic-music/008.html',
+      'https://stsic-bgm.github.io/category/celtic-music/009.html',
+      'https://stsic-bgm.github.io/category/celtic-music/010.html'
+    ];
+    var num = arr.length;
+    if (arr.length == 0) return false;
+
+    // 0 から (arr.length - 1) の乱数を取得
+    var num = Math.floor(Math.random() * arr.length);
+    location.href = arr[num]; // リダイレクト
+  }
+</script>
