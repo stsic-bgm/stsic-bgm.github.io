@@ -22,7 +22,7 @@ document.write('<link rel="apple-touch-icon-precomposed" href="../../images/icon
 //OGPタグ
 document.write('<meta property="og:type" content="website">');
 document.write('<meta property="og:description" content="勉強や作業に使えるBGMサイト。">');
-document.write('<meta property="og:image" content="https://stsic-bgm.github.io/images/samune.png" />');
+document.write('<meta property="og:image" content="https://stsic-bgm.github.io/images/samune.jpg" />');
 document.write('<meta name="twitter:card" content="summary_large_image" />');
 document.write('<meta name="twitter:site" content="@Twitterユーザー名" />');
 document.write('<meta property="og:site_name" content="stsic" />');
