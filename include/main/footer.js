@@ -1,0 +1,1 @@
+document.write('<p id="copy-right">&copy; 2021 stsic</p>');
