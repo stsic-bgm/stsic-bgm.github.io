@@ -20,7 +20,6 @@ document.write('<link rel="apple-touch-icon-precomposed" href="./images/icon.png
 
 
 //OGPタグ
-document.write('<meta property="og:title" content="stsic" />');
 document.write('<meta property="og:type" content="website">');
 document.write('<meta property="og:description" content="勉強や作業に使えるBGMサイト。">');
 document.write('<meta property="og:image" content="https://stsic-bgm.github.io/images/samune.jpg" />');
