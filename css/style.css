@@ -225,6 +225,10 @@ aside {
   background-color: white;
 }
 
+nav{
+  margin-bottom: 40px;
+}
+
 nav ul {
   padding: 0;
   border-top: 3px #0069d2 solid;
