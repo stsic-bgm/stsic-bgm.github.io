@@ -27,4 +27,4 @@ document.write('<meta property="og:site_name" content="stsic" />');
 document.write('<meta property="og:locale" content="ja_JP" />');
 
 //Google AdSense自動広告
-<script data-ad-client="ca-pub-3868968729859777" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+document.write('<script data-ad-client="ca-pub-3868968729859777" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>');
