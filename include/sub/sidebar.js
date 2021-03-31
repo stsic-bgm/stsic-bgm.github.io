@@ -31,14 +31,14 @@ document.write('<li><a href="../../privacy-policy.html">プライバシーポリ
 document.write('</ul>');
 document.write('</nav>');
 //広告
-document.write('<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>');
+//document.write('<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>');
 //サイドバー最下
-document.write('<ins class="adsbygoogle"');
-document.write('style="display:block"');
-document.write('data-ad-client="ca-pub-3868968729859777"');
-document.write('data-ad-slot="3893022053"');
-document.write('data-ad-format="auto"');
-document.write('data-full-width-responsive="true"></ins>');
-document.write('<script>');
-document.write(' (adsbygoogle = window.adsbygoogle || []).push({});');
-document.write('</script>');
+//document.write('<ins class="adsbygoogle"');
+//document.write('style="display:block"');
+//document.write('data-ad-client="ca-pub-3868968729859777"');
+//document.write('data-ad-slot="3893022053"');
+//document.write('data-ad-format="auto"');
+//document.write('data-full-width-responsive="true"></ins>');
+//document.write('<script>');
+//document.write(' (adsbygoogle = window.adsbygoogle || []).push({});');
+//document.write('</script>');
