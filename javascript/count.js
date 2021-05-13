@@ -1,7 +1,7 @@
 // カテゴリーの数用
 $(function () {
   var countElm = $('.count-1'),
-    countSpeed = 50;
+    countSpeed = 60;
 
   countElm.each(function () {
     var self = $(this),
@@ -28,7 +28,7 @@ $(function () {
 // BGMの数用
 $(function () {
   var countElm = $('.count-2'),
-    countSpeed = 5;
+    countSpeed = 6;
 
   countElm.each(function () {
     var self = $(this),
