@@ -22,6 +22,7 @@ document.write('<li><a href="./category/alpha-wave/">α波</a></li>');
 document.write('<li><a href="./category/classic/">クラシック</a></li>');
 document.write('<li><a href="./category/celtic-music/">ケルト音楽</a></li>');
 document.write('<li><a href="./category/vocaloid/">ボカロ</a></li>');
+document.write('<li><a href="./category/anime/">アニソン</a></li>');
 document.write('</ul>');
 document.write('<ul>');
 document.write('<li><a href="notice.html">お知らせ</a></li>');
