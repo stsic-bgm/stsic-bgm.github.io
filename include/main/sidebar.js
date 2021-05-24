@@ -25,7 +25,6 @@ document.write('<li><a href="./category/vocaloid/">ボカロ</a></li>');
 document.write('<li><a href="./category/anime/">アニソン</a></li>');
 document.write('</ul>');
 document.write('<ul>');
-document.write('<li><a href="notice.html">お知らせ</a></li>');
 document.write('<li><a href="report-bugs.html">バグの報告</a></li>');
 document.write('<li><a href="add-to-content.html">コンテンツ追加要望</a></li>');
 document.write('<li><a href="contact.html">お問い合わせ</a></li>');
