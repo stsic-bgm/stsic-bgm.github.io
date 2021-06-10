@@ -17,7 +17,6 @@ document.write('<li><a href="../../category/music-box/">オルゴール</a></li>
 document.write('<li><a href="../../category/piano/">ピアノ</a></li>');
 document.write('<li><a href="../../category/natural-sound/">自然音</a></li>');
 document.write('<li><a href="../../category/study-sound/">勉強中の音</a></li>');
-document.write('<li><a href="../../category/animal-crossing/">あつ森</a></li>');
 document.write('<li><a href="../../category/alpha-wave/">α波</a></li>');
 document.write('<li><a href="../../category/classic/">クラシック</a></li>');
 document.write('<li><a href="../../category/celtic-music/">ケルト音楽</a></li>');
